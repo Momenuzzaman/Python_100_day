@@ -44,3 +44,20 @@
 
 # min_score = min(student_score)
 # print(f"The lowest score in the class is: {min_score}")
+
+# last_number = input("Enter last number :")
+# last_number = int(last_number)+1
+# total = 0
+# for i in range(1, last_number):
+#     total += i
+# print(total)
+
+# for number in range(1, 101):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("FizzBuzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(number)
