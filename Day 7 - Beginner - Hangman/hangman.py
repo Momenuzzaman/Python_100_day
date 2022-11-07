@@ -5,13 +5,19 @@ print(f"Pssst, The solution is {chosen_word}")
 
 display = []
 for _ in range(len(chosen_word)):
-    display.append("-")
+    display.append("_")
 print(display)
 
-guess = input("Guess a letter: ").lower()
+end_of_game = False
+while not end_of_game:
+    guess = input("Guess a letter: ").lower()
 
-for position in range(len(chosen_word)):
-    letter = chosen_word[position]
-    if letter == guess:
-        display[position] = letter
-print(display)
+    for position in range(len(chosen_word)):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+    print(display)
+
+    if "_" not in display:
+        end_of_game = True
+        print("You win.")
